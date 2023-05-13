@@ -26,11 +26,11 @@ const Cards = () => {
 
     return (
 
-        <div className='flex flex-wrap align-items-center m-3 p-3'>
-        {loading?<div className='w-full flex justify-center items-center h-96'><RotateLoader color="#e74c3c" height={25}/></div>:
+        <div className=' flex flex-wrap align-items-center m-3 p-3'>
+        {loading?<div className=' background w-full flex justify-center items-center h-96'><RotateLoader color="#e74c3c" height={25}/></div>:
         data.map((ele,i)=>{
         return(
-          <Link to={`/detail/${ele.id}`}>  <div className='card border-2 border-[#243c5a] p-3 m-2 hover:-translate-y-2 transition-all duration-300 rounded-lg md:mt-0 mt-3'>
+          <Link to={`/detail/${ele.id}`}>  <div className='background card border-2 border-[#fff] p-3 m-2 hover:-translate-y-2 transition-all duration-300 rounded-lg md:mt-0 mt-3'>
                 <div className='overflow-hidden p-2 bg-[#2f3640]'>
 
                     <img className='h-48 w-52 hover:scale-125 transition duration-500' src={ele.img} alt="" srcset="" />

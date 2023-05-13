@@ -61,7 +61,7 @@ const AddMovie = () => {
             </h1>
           </div>
           <div class="lg:w-1/2 md:w-2/3 mx-auto">
-            <div class="flex flex-wrap -m-2 ">
+            <div class="flex flex-wrap -m-2">
               <div class="p-2 w-1/2">
                 <div class="relative">
                   <label for="name" class="leading-7 text-2xl text-[#1abc9c]">

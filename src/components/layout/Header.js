@@ -3,13 +3,14 @@ import AddCircleOutlineIcon from '@mui/icons-material/AddCircleOutline';
 import { Button } from '@mui/material';
 import { Link } from 'react-router-dom';
 import { Appstate } from '../../App';
+import "./header.css"
 const Header = () => {
 
   const useAppstate=useContext(Appstate);
 
   return (
-    <div className=''>
-      <h1 className='sticky z-10 text-4xl justify-between text-[#e74c3c] p-5 flex border-b-2 '><Link to={'/'}><span>BOLLY<span 
+    <div className='header'>
+      <h1 className='sticky z-10 text-4xl justify-between text-[#e74c3c] p-5 flex border-b-2 '><Link to={'/'}><span>SILLY<span 
       className='text-[#2ecc71] pl-1'>WOOD</span></span></Link>
       {
         useAppstate.login?
