@@ -21,9 +21,16 @@ const Login = () => {
         try{
             const quer=query(usersRef,where('mobile','==',form.mobile))
             const querySnapshot=await getDocs(quer);
-
+            if(querySnapshot.size===0){
+                swal({
+                    title: "Invalid Credentials",
+                    icon: "error",
+                    buttons: false,
+                    timer: 3000
+                })
+            }
+            else{
             querySnapshot.forEach((doc)=>{
-                console.log('yes');
                 const _data=doc.data();
                 const isUser=bcrypt.compareSync(form.password,_data.password);
                 if(isUser){
@@ -47,6 +54,7 @@ const Login = () => {
 
                 }
             })
+        }
 
         }
         catch (err) {
