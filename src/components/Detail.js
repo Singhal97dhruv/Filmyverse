@@ -32,7 +32,7 @@ const Detail = () => {
 
   return (
 
-    <div className='p-3 mt-2 flex flex-col  md:flex-row md:items-start '>
+    <div className='p-3 my-4 flex flex-col  md:flex-row md:items-start '>
      { loading?<div className='w-full flex justify-center items-center h-96'><RotateLoader color="#e74c3c" height={25}/></div>:<>
 
      <div className='card w-1/2 p-3 py-5 bg-[#2f3640] overflow-hidden '>

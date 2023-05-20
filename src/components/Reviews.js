@@ -7,18 +7,21 @@ import swal from 'sweetalert'
 import "./reviews.css"
 import { ClockLoader } from 'react-spinners';
 import { Appstate } from '../App';
-
+import { useNavigate } from 'react-router-dom';
 const Reviews = ({ id, prevRating, userRated }) => {
+    
     const useAppstate=useContext(Appstate);
     const [rating, setRating] = useState(0);
     const [loading, setLoading] = useState(false);
     const [thought, setThought] = useState("");
     const [reviewsLoading, setReviewsLoading] = useState(false);
     const [newAdded,setNewAdded]=useState();
+    const navigate=useNavigate();
     const [data, setData] = useState([]);
     const sendReview = async () => {
         setLoading(true);
         try {
+            if(useAppstate.login){
             await addDoc(reviewsRef, {
                 movieId: id,
                 author: useAppstate.userName,
@@ -40,6 +43,9 @@ const Reviews = ({ id, prevRating, userRated }) => {
                 buttons: false,
                 timer: 3000
             })
+        }else{
+            navigate('/login');
+        }
         }
         catch (err) {
             swal({
@@ -104,6 +110,7 @@ const Reviews = ({ id, prevRating, userRated }) => {
                                     size={20}
                                     half={true}
                                     value={e.rating}
+                                    edit={false}
                                 />
                                 <p className='text-[#EAB543] text-lg'>{e.thought}</p>
                             </div>

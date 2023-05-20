@@ -26,7 +26,7 @@ const Cards = () => {
 
     return (
 
-        <div className=' flex flex-wrap align-items-center m-3 p-3'>
+        <div className=' flex flex-wrap align-items-center m-3 p-3 mb-6'>
         {loading?<div className=' background w-full flex justify-center items-center h-96'><RotateLoader color="#e74c3c" height={25}/></div>:
         data.map((ele,i)=>{
         return(
