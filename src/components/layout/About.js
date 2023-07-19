@@ -33,7 +33,11 @@ const About = () => {
                 alt="Founder"
               />
             </div>
-            <h2>Dhruv Singhal</h2>
+            <h2>
+            <a href="https://portfolio-singhal97dhruv.vercel.app/" target="_blank">
+            Dhruv Singhal
+            </a>
+            </h2>
             <Button onClick={visitLinkedIn} color="secondary">
               Visit LinkedIn
             </Button>

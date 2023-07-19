@@ -1,4 +1,5 @@
 .header{
-    background: rgb(175,24,50);
-background: radial-gradient(circle, rgba(175,24,50,1) 32%, rgba(31,75,9,0.9585084033613446) 75%);
+    margin-top: 0px;
+    background-color: #0984e3; 
+    transform: translateY(-10%);
 }

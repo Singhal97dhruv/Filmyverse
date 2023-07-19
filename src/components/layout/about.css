@@ -1,25 +1,21 @@
 .aboutSection {
-    height: 100vh;
+    height: 120vh;
     width: 100vw;
     max-width: 100%;
-    background-image: linear-gradient(
-        to bottom right,
-        rgb(78, 81, 255),
-        rgb(74, 137, 189)
-      );
+    background-color: #4b4b4b;
     display: grid;
     grid-template-columns: 4fr 4fr;
     position: relative;
     /* margin-top: 50%; */
   }
   
-  .aboutSectionGradient {
+  /* .aboutSectionGradient {
     background-image: linear-gradient(
       to bottom right,
       rgb(78, 81, 255),
       rgb(74, 137, 189)
     );
-  }
+  } */
   
   .aboutSectionContainer {
     position: absolute;

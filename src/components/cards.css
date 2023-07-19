@@ -2,7 +2,6 @@
     box-shadow: #243c5a 0px 3px 6px, rgba(250, 247, 247, 0.23) 0px 3px 6px;
 }
 .background{
-    background: rgb(121,9,117);
-background: linear-gradient(90deg, rgba(121,9,117,0.8996848739495799) 1%, rgba(0,1,1,0.7764355742296919) 56%);
+ background-color: black;
 
 }

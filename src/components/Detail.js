@@ -39,12 +39,12 @@ const Detail = () => {
         <img className=' sticky top-10 w-full h-full hover:scale-125 transition duration-500' src={data.img} alt="" />
       </div>
       <div className=' p-6  md:w-1/2 md:ml-4 ml-0'>
-            <h1 className='heading text-6xl text-[#e84118]'>{data.name}<span className='text-4xl p-2'>({data.year})</span></h1>
+            <h1 className='heading text-6xl text-[#fff]'>{data.name}<span className='text-4xl p-2'>({data.year})</span></h1>
             <div className='pt-3'>
 
             <ReactStars size={25} half={true} value={data.rating/data.rated} edit={false} />
             </div>
-            <p className='text-heading text-header '>{data.description}</p>
+            <p className='text-heading text-black '>{data.description}</p>
             
       <Reviews id={id} prevRating={data.rating} userRated={data.rated}/>
 

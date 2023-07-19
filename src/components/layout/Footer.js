@@ -4,8 +4,10 @@ import { Link } from 'react-router-dom';
 import FavoriteIcon from '@mui/icons-material/Favorite';
 const Footer = () => {
   return (
-    <div className='footer  fixed left-0 bottom-0 w-full flex justify-center text-xl z-10'>
-       <h1 className='text-[#9b59b6]'>Made with <FavoriteIcon className='text-[#fd79a8]'/> by<Link to={'/about'}> <span className='font-bold text-[#0984e3]'>Dhruv Singhal</span></Link></h1>
+    <div className='footer  h-48 w-full flex-col items-center flex justify-center text-xl z-10 border-t-2 border-t-black-100'>
+       <h1 className='text-[#fff]'>Made with <FavoriteIcon className='text-[#e84393]'/> by</h1>
+      <marquee behavior="" direction="left" scrollAmount="15" className="blink"> <Link to={'/about'}> <h1 className='font-bold text-4xl text-[#1B1464]'>Dhruv <span className='text-[#F79F1F]'>Singhal</span></h1></Link></marquee>
+      <h5>Click on the name to redirect to the about section</h5>
 
     </div>
   )
